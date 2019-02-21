@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center!important;">Accrodian | Collapsable</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 padding style="text-align: center!important;"><b> F1 Car Constructors & Drivers </b></h2>
+  <ion-card *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+    <ion-card-content>
+      <ion-list>
+        <h3>
+          <b>{{d.title}}</b>
+          <ion-icon style="float:right !important" color="success" item-right [name]="isGroupShown(i) ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+        </h3>
+        <div *ngIf="isGroupShown(i)">{{d.description}}</div>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p padding-left style="text-align: center!important;">Created By: <a href="https://github.com/MandaliyaPruthvi">Pruthvi
+        Mandaliya</a></p>
+  </ion-toolbar>
+</ion-footer>
