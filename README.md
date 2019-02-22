@@ -1,4 +1,4 @@
-# CollapsibleCardList
+# Ionic-CollapsibleCardList
 This repository contains Collapsible Card List used in Ionic - V3, which shows the description when you click on the card list and hide the description when it clicked again. 
 
 The example used here is list of Formula 1 racing cars teams and their drivers.
